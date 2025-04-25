@@ -6,6 +6,11 @@ on:
 env:
   TAG: ${{ github.sha }}
 
+# Add permissions block
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   docker:
     name: Build image
